@@ -32,4 +32,10 @@ docker-compose -f docker-compose.kafka.yml exec broker kafka-console-consumer --
 # Tear down
 To bring down kafka cluster `docker-compose -d docker-compose.kafka.yml down`
 
-To bring down project `docker-compose down` 
+To bring down project 
+
+`docker-compose down` 
+
+To remove project network
+
+`docker network rm kafka-network` 
