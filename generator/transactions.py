@@ -1,7 +1,7 @@
 from random import choices, randint
 from string import ascii_letters, digits
 
-account_chars: str = digits + ascii_letters
+account_chars = digits + ascii_letters
 
 
 def _random_account_id():
