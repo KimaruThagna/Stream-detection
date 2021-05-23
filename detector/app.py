@@ -8,8 +8,7 @@ LEGIT_TOPIC = os.environ.get("LEGIT_TOPIC")
 FRAUD_TOPIC = os.environ.get("FRAUD_TOPIC")
 
 
-def is_suspicious(transaction: dict) -> bool:
-    """Determine whether a transaction is suspicious."""
+def is_suspicious(transaction: dict):
     return transaction["amount"] >= 900
 
 
@@ -26,4 +25,4 @@ for message in consumer:
     transaction = message.value
     topic = FRAUD_TOPIC if is_suspicious(transaction) else LEGIT_TOPIC
     producer.send(topic, value=transaction)
-    print(topic, transaction)  # DEBUG
+    print(topic, transaction)  
