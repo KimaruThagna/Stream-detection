@@ -19,4 +19,4 @@ services:
 networks:
   default:
     external:
-      name: kafka-network
+      name: kafka-network #allow same network access by more than one docker-compose.yml
