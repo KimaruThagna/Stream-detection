@@ -1,5 +1,5 @@
-# Stream-detection
-streaming detection app using Docker and Kafka
+# Fraud Stream-detection
+Sample fraud detection app using Python and Kafka with Docker for service management
 
 # Setup
 Spin the Kafka cluster
