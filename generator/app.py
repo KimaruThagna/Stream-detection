@@ -1,7 +1,7 @@
 import os, time, json
 from kafka import KafkaProducer
 
-from transactions import create_random_transaction
+from generator.transactions import create_random_transaction
 
 KAFKA_BROKER_URL = os.environ.get("KAFKA_BROKER_URL")
 
