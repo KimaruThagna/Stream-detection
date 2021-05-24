@@ -8,7 +8,7 @@ LEGIT_TOPIC = os.environ.get("LEGIT_TOPIC")
 FRAUD_TOPIC = os.environ.get("FRAUD_TOPIC")
 
 
-def is_suspicious(transaction: dict):
+def is_suspicious(transaction):
     return transaction["amount"] >= 900
 
 
